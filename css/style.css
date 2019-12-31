@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -13,6 +14,16 @@ a {
 }
 li {
   list-style: none;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 35px;
+  color: #3b4447;
+}
+p {
+  color: #7a8b91;
 }
 
 .wrapper_70 {
@@ -25,6 +36,20 @@ li {
 }
 .text_right {
   text-align: right;
+}
+
+.link {
+  display: inline-block;
+  width: 90px;
+  font-weight: bold;
+  color: #24c1ed;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(36,193,237,0.5);
+}
+.link i {
+  font-size: 12px;
+  margin-left: 5px;
+  color: rgba(36,193,237,0.5);
 }
 
 /* ============= HEADER ============== */
@@ -97,3 +122,41 @@ header .wrapper_70 {
 }
 
 /* QUICK */
+.quick {
+  display: flex;
+  margin: 190px 10px 90px 80px;
+}
+.quick .box_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 39%;
+}
+.quick .box_left h5 {
+  margin-bottom: 15px;
+  color: #7a8b91;
+  font-weight: normal;
+}
+.box_left h5:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  background-image: url(../img/icolearn.svg);
+  background-size: cover;
+  background-position: center;
+  vertical-align: sub;
+}
+.quick .box_left h2,
+ .quick .box_left p {
+  margin-bottom: 20px;
+}
+
+
+.quick .box_right {
+  width: 61%;
+}
+.box_right img {
+  width: 100%;
+}
