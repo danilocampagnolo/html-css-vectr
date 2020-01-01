@@ -19,7 +19,7 @@ h1 {
   font-size: 40px;
 }
 h2 {
-  font-size: 35px;
+  font-size: 32px;
   color: #3b4447;
 }
 p {
@@ -38,6 +38,61 @@ p {
   text-align: right;
 }
 
+.btn {
+
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+.box_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 41%;
+  padding-left: 80px;
+}
+.box_left h5 {
+  margin-bottom: 15px;
+  color: #7a8b91;
+  font-weight: normal;
+}
+.box_left h5:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+  background-size: cover;
+  background-position: center;
+  vertical-align: sub;
+}
+.box_left h2,
+.box_left p {
+  margin-bottom: 20px;
+}
+
+
+
+.box_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 59%;
+  padding-right: 15px;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: rgba(200,220,226,0.25);
+  border: 1px solid #c8dce2;
+  border-color: rgba(200,220,226,0.3);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
 .link {
   display: inline-block;
   width: 90px;
@@ -51,6 +106,7 @@ p {
   margin-left: 5px;
   color: rgba(36,193,237,0.5);
 }
+
 
 /* ============= HEADER ============== */
 header {
@@ -68,6 +124,7 @@ header .wrapper_70 {
   height: 80px;
   background-color: rgba(35,36,36,0.97);
   border-bottom: 1px solid rgba(66,77,81,0.25);
+  z-index: 3;
 }
 
 .logo {
@@ -122,41 +179,42 @@ header .wrapper_70 {
 }
 
 /* QUICK */
-.quick {
-  display: flex;
-  margin: 190px 10px 90px 80px;
+#quick {
+  position: relative;
+  height: 775px;
 }
-.quick .box_left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 39%;
+
+#quick .container {
+  position: absolute;
+  top: 40px;
 }
-.quick .box_left h5 {
-  margin-bottom: 15px;
-  color: #7a8b91;
-  font-weight: normal;
-}
-.box_left h5:before {
-  content: '';
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  margin-right: 12px;
+
+#quick .box_left h5:before {
   background-image: url(../img/icolearn.svg);
-  background-size: cover;
-  background-position: center;
-  vertical-align: sub;
 }
-.quick .box_left h2,
- .quick .box_left p {
-  margin-bottom: 20px;
-}
-
-
-.quick .box_right {
-  width: 61%;
-}
-.box_right img {
+#quick .box_right img {
   width: 100%;
+}
+
+/* URL */
+#url {
+  height: 680px;
+  background-color: rgb(30,34,36);
+}
+
+#url .box_left h2 {
+  color: rgb(236,238,239);
+}
+#url .box_left h5:before {
+  background-image: url(../img/icorealtime.svg);
+}
+
+#url .box_right {
+  position: relative;
+  overflow: hidden;
+}
+#url .box_right img {
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
 }
