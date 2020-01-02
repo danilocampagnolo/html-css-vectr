@@ -275,6 +275,7 @@ header .wrapper_70 {
   background-position: 0px 100px;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 1px solid #e2e9ed;
 }
 
 #vector .box_left h5:before {
@@ -294,4 +295,28 @@ header .wrapper_70 {
   width: 40%;
   margin-left: 20px;
   margin-bottom: -130px;
+}
+
+/* OPTIONS */
+#options {
+  height: 650px;
+  border-bottom: 4px solid rgb(85,110,253);
+}
+.box_50 {
+  width: 50%;
+  padding: 60px;
+}
+.box_50:first-child {
+  border-right: 1px solid #e2e9ed;
+}
+.box_50 img {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.box_50 h3 {
+  margin-bottom: 20px;
+}
+.box_50 p {
+  line-height: 160%;
+  margin-bottom: 20px;
 }
