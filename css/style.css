@@ -39,7 +39,21 @@ p {
 }
 
 .btn {
+  padding: 15px 40px;
+  color: #cdd8bc;
+  border-radius: 3px;
+  border: 2px solid #a1de41;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.btn:hover {
+  background-color: #242a2d;
+  color: #a1de41;
+}
 
+.border_hover:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(31,192,237);
 }
 
 .container {
@@ -73,8 +87,6 @@ p {
   margin-bottom: 20px;
 }
 
-
-
 .box_right {
   display: flex;
   flex-direction: column;
@@ -95,7 +107,6 @@ p {
 
 .link {
   display: inline-block;
-  width: 90px;
   font-weight: bold;
   color: #24c1ed;
   padding-bottom: 5px;
@@ -132,6 +143,7 @@ header .wrapper_70 {
 }
 .logo img {
   width: 100px;
+  height: 35px;
   vertical-align: middle;
 }
 
@@ -143,12 +155,37 @@ header .wrapper_70 {
 }
 .navbar li {
   display: inline;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .navbar li a {
+  font-size: 14px;
   text-decoration: none;
   color: rgb(76,96,102);
 }
+.navbar li a:hover {
+  color: #ffff;
+}
+.navbar li a i {
+  font-size: 7px;
+  vertical-align: middle;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+.navbar .btn {
+  color: #cdd8bc;
+  padding: 5px 10px;
+}
+.navbar .btn:hover {
+  color: #a1de41;
+}
+#login {
+  border-color: rgb(63,77,78);
+  margin-left: -10px;
+}
+#login:hover {
+  color: #a1de41;
+}
+
 .jumbo {
   display: flex;
   flex-direction: column;
@@ -157,7 +194,15 @@ header .wrapper_70 {
 .jumbo_top {
   width: 70%;
   margin: auto;
-  padding: 50px 0px;
+  padding: 70px 0px;
+}
+.jumbo_top h1 {
+  color: #eceeef;
+}
+.jumbo_top p {
+  margin: 10px auto 40px;
+  font-size: 15px;
+  line-height: 160%;
 }
 
 /* ============= MAIN ============= */
@@ -187,6 +232,10 @@ header .wrapper_70 {
 #quick .container {
   position: absolute;
   top: 40px;
+}
+
+#quick .link {
+  width: 90px;
 }
 
 #quick .box_left h5:before {
@@ -219,7 +268,30 @@ header .wrapper_70 {
   right: 80px;
 }
 
-/* vector */
+/* VECTOR */
 #vector {
   height: 680px;
+  background-image: url(../img/onda.svg);
+  background-position: 0px 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#vector .box_left h5:before {
+  background-image: url(../img/icorealtime.svg);
+}
+
+#vector .link {
+  width: 205px;
+}
+
+#vector .box_right {
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: hidden;
+}
+#vector .box_right img {
+  width: 40%;
+  margin-left: 20px;
+  margin-bottom: -130px;
 }
